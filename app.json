@@ -1,0 +1,7 @@
+{
+  "name": "Valk",
+  "displayName": "Valk",
+  "plugins": [
+    "react-native-compressor"
+  ]
+}
