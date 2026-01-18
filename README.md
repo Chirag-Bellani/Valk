@@ -1,79 +1,77 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
+# VALK – Transport Marketplace 🚚
 
-# Getting Started
+VALK is a two-sided transport marketplace platform that connects **Shippers** and
+**Transporters** to enable efficient and transparent movement of goods. The application
+allows shippers to post load requirements and transporters to discover, negotiate, and
+accept loads based on their vehicle availability.
 
->**Note**: Make sure you have completed the [React Native - Environment Setup](https://reactnative.dev/docs/environment-setup) instructions till "Creating a new application" step, before proceeding.
+The platform focuses on real-world logistics workflows such as role-based access,
+two-way price negotiation, real-time notifications, and load journey tracking.
 
-## Step 1: Start the Metro Server
+---
 
-First, you will need to start **Metro**, the JavaScript _bundler_ that ships _with_ React Native.
+## 🚀 Key Features
 
-To start Metro, run the following command from the _root_ of your React Native project:
+### 👤 Role-Based Access
+- Users can log in as either a **Shipper** or a **Transporter**
+- Conditional navigation and protected screens based on user role
 
+### 📦 Shipper Features
+- Post load details including source, destination, vehicle type, and expected price
+- View transporter bids and negotiate pricing
+- Track load journey from pickup to delivery
+- Receive real-time status updates and notifications
+
+### 🚛 Transporter Features
+- Browse available loads posted by shippers
+- Place bids and negotiate rates with shippers
+- Accept confirmed loads
+- Update journey status and receive notifications
+
+### 🔔 Communication & Updates
+- Two-way rate negotiation between shippers and transporters
+- Real-time notifications for bid updates, load status changes, and journey milestones
+
+---
+
+## 🛠 Tech Stack
+
+- **Mobile:** React Native
+- **Language:** JavaScript / TypeScript
+- **State Management:** React Hooks
+- **Backend:** REST APIs
+- **Notifications:** API-based real-time updates
+- **Version Control:** Git & GitHub
+
+---
+
+## 📦 Installation & Setup
+
+Follow the steps below to run the project locally.
+
+### 1️⃣ Clone the repository
 ```bash
-# using npm
+git clone https://github.com/Chirag-Bellani/Valk.git
+```
+2️⃣ Navigate to the project folder
+```bash
+cd Valk
+```
+3️⃣ Install dependencies
+```bash
+npm install
+```
+4️⃣ Start Metro server
+```bash
 npm start
-
-# OR using Yarn
-yarn start
 ```
-
-## Step 2: Start your Application
-
-Let Metro Bundler run in its _own_ terminal. Open a _new_ terminal from the _root_ of your React Native project. Run the following command to start your _Android_ or _iOS_ app:
-
-### For Android
-
+5️⃣ Run the app on Android
 ```bash
-# using npm
 npm run android
-
-# OR using Yarn
-yarn android
 ```
+Environment Variables
 
-### For iOS
-
+Create a .env file in the root directory and configure required API keys:
 ```bash
-# using npm
-npm run ios
-
-# OR using Yarn
-yarn ios
+API_BASE_URL=your_api_base_url
 ```
-
-If everything is set up _correctly_, you should see your new app running in your _Android Emulator_ or _iOS Simulator_ shortly provided you have set up your emulator/simulator correctly.
-
-This is one way to run your app — you can also run it directly from within Android Studio and Xcode respectively.
-
-## Step 3: Modifying your App
-
-Now that you have successfully run the app, let's modify it.
-
-1. Open `App.tsx` in your text editor of choice and edit some lines.
-2. For **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Developer Menu** (<kbd>Ctrl</kbd> + <kbd>M</kbd> (on Window and Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (on macOS)) to see your changes!
-
-   For **iOS**: Hit <kbd>Cmd ⌘</kbd> + <kbd>R</kbd> in your iOS Simulator to reload the app and see your changes!
-
-## Congratulations! :tada:
-
-You've successfully run and modified your React Native App. :partying_face:
-
-### Now what?
-
-- If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
-- If you're curious to learn more about React Native, check out the [Introduction to React Native](https://reactnative.dev/docs/getting-started).
-
-# Troubleshooting
-
-If you can't get this to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
-
-# Learn More
-
-To learn more about React Native, take a look at the following resources:
-
-- [React Native Website](https://reactnative.dev) - learn more about React Native.
-- [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
-- [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
-- [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
-- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
